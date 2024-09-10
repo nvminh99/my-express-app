@@ -5,7 +5,17 @@
   "repository": "https://github.com/nvminh99/my-express-app.git",
   "author": "Minhbibi99 <vanminhlb01@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon --inspect app.js",
+    "watch": "node-sass src/scss/app.scss src/public/css/app.css -w"
+  },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
   }
 }
